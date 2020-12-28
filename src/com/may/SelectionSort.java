@@ -1,6 +1,6 @@
 package com.may;
 
-public class SelectionSort {
+public class SelectionSort { // 선택 정렬
     // swapElement
     // indexLowest
     // selectionSort
@@ -12,6 +12,7 @@ public class SelectionSort {
         array[j] = temp;
     }
 
+    // array의 start 위치부터 가장 작은 값 찾기
     public static int indexLowest(int[] array, int start){
         int idx = start;
         for(int i = start; i < array.length; i++)
@@ -29,10 +30,10 @@ public class SelectionSort {
     }
 
     public static void main(String[] args){
-        int[] array = new int[]{5, 3, 4, 8, 2};
+        int[] array = new int[]{5, 3, 4, 8, 2, 7};
         selectionSort(array);
         for(int i = 0; i < array.length; i++){
-            System.out.println(array[i]);
+            System.out.print(array[i] + " ");
         }
     }
 }
