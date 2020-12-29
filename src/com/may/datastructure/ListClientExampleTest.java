@@ -1,4 +1,4 @@
-package com.may;
+package com.may.datastructure;
 
 import org.junit.Test;
 
@@ -7,7 +7,6 @@ import java.util.List;
 
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.junit.Assert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class ListClientExampleTest {
 

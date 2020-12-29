@@ -1,4 +1,4 @@
-package com.may;
+package com.may.datastructure;
 
 public class SelectionSort { // 선택 정렬
     // swapElement

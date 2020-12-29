@@ -1,6 +1,5 @@
-package com.may;
+package com.may.datastructure;
 
-import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.List;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
