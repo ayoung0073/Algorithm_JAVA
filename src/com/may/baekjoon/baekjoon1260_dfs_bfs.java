@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class baekjoon_1260_dfs_bfs {
+public class baekjoon1260_dfs_bfs {
 
 
     public static void main(String[] args) {
