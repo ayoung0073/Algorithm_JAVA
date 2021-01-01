@@ -27,12 +27,11 @@ public class baekjoon2667_단지번호 {
         }
 
         List<Integer> list = new ArrayList<>(); // 단지 리스트
-        // 삽입 정렬해보자..
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 if (visited[i][j] == 0 && mat[i][j] == 1) {
-                    System.out.println("반복문에서 dfs 호출");
+                    //System.out.println("반복문에서 dfs 호출");
                     list.add(dfs(mat, visited, i, j));
                     selectionSort(list);
                 }
@@ -58,7 +57,7 @@ public class baekjoon2667_단지번호 {
     }
 
     public static int dfs(int mat[][], int visited[][], int startRow, int startCol) {
-        System.out.println("check (" + startRow + ", " + startCol + ")");
+        //System.out.println("check (" + startRow + ", " + startCol + ")");
         visited[startRow][startCol] = 1;
         int ret = 1;
         for(int i = 0; i < 4; i++){
@@ -66,7 +65,7 @@ public class baekjoon2667_단지번호 {
             int y = startCol + yArr[i];
 
             if(checkRange(mat, x, y) && visited[x][y] == 0 && mat[x][y] == 1){
-                System.out.println("재귀에서 호출");
+                //System.out.println("재귀에서 호출");
                 ret += dfs(mat, visited, x, y);
             }
         }
