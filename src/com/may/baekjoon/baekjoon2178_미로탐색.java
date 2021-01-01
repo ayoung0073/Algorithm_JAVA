@@ -10,7 +10,7 @@ class Pos{
     }
 }
 
-public class baekjoon2178_maze {
+public class baekjoon2178_미로탐색 {
 
     static int rowNum, colNum;
     static int[][] visited;

@@ -1,4 +1,4 @@
-package com.may.baekjoon.baekjoon10828_stack;
+package com.may.baekjoon.baekjoon10828_스택;
 
 import java.util.Scanner;
 
