@@ -1,9 +1,9 @@
-package com.may.baekjoon.baekjoon10828_스택;
+package com.may.boj.boj_스택;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class baekjoon10828_stack_fail_case { // 시간 초과 case
+public class boj10828_stack_fail_case { // 시간 초과 case
     public static void main(String[] args) {
         // 스캐너
         Scanner sc = new Scanner(System.in);

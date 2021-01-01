@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 import org.jsoup.nodes.Node;
 
 
-public class WikiNodeIterable implements Iterable<Node> {
+public class NodeIterable implements Iterable<Node> {
 
     private Node root;
 
@@ -20,7 +20,7 @@ public class WikiNodeIterable implements Iterable<Node> {
      *
      * @param root
      */
-    public WikiNodeIterable(Node root) {
+    public NodeIterable(Node root) {
         this.root = root;
     }
 
@@ -36,7 +36,6 @@ public class WikiNodeIterable implements Iterable<Node> {
      *
      */
     private class WikiNodeIterator implements Iterator<Node> {
-
         // this stack keeps track of the Nodes waiting to be visited
         Deque<Node> stack;
 

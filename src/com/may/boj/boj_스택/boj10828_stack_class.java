@@ -1,9 +1,9 @@
-package com.may.baekjoon.baekjoon10828_스택;
+package com.may.boj.boj_스택;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class baekjoon10828_stack_class { // 스택 클래스 이용, StringBuilder
+public class boj10828_stack_class { // 스택 클래스 이용, StringBuilder
 
 public static void main(String[] args){
     Scanner sc = new Scanner(System.in);

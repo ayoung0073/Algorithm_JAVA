@@ -1,4 +1,4 @@
-package com.may.baekjoon;
+package com.may.boj;
 
 import java.util.*;
 
@@ -10,7 +10,7 @@ class Pos{
     }
 }
 
-public class baekjoon2178_미로탐색 {
+public class boj2178_미로탐색 {
 
     static int rowNum, colNum;
     static int[][] visited;

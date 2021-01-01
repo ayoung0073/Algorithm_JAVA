@@ -1,10 +1,10 @@
-package com.may.baekjoon;
+package com.may.boj;
 
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class baekjoon1260_dfs_bfs {
+public class boj1260_DFS와BFS {
 
 
     public static void main(String[] args) {

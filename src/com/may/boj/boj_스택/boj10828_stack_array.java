@@ -1,8 +1,8 @@
-package com.may.baekjoon.baekjoon10828_스택;
+package com.may.boj.boj_스택;
 
 import java.util.Scanner;
 
-public class baekjoon10828_stack_array { // 스택 배열로 구현 + StringBuilder
+public class boj10828_stack_array { // 스택 배열로 구현 + StringBuilder
 
     public static int[] stack;
     public static int size = 0;
