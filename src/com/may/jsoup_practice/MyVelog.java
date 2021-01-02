@@ -11,6 +11,8 @@ public class MyVelog {
 
         MyFetcher fetcher = new MyFetcher();
         MyCounter counter = new MyCounter(url);
+        MyCounter_noIterator counter2 = new MyCounter_noIterator(url);
+
 
         Elements elements = fetcher.fetch(url, "sc-iujRgT igQOMp", "h2");
         // element < Node
@@ -27,6 +29,18 @@ public class MyVelog {
         System.out.println("총 카테고리 개수 : " + counter.size());
 
         for(String key: map.keySet()){
+            System.out.println(key + " -> " + map.get(key));
+        }
+
+        System.out.println("======================================");
+
+        Map<String, Integer> map2 = counter2.processElements(elements);
+
+        System.out.println("대상 URL : " + counter2.getLabel());
+
+        System.out.println("총 카테고리 개수 : " + counter2.size());
+
+        for(String key: map2.keySet()){
             System.out.println(key + " -> " + map.get(key));
         }
     }

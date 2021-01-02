@@ -16,6 +16,8 @@ public class MyFetcher {
 
         Elements contents = doc.getElementsByClass(className);
 
+
+        //System.out.println(contents.select(cssName));
         return contents.select(cssName);
     }
 }

@@ -26,7 +26,7 @@ public class NodeIterable implements Iterable<Node> {
 
     @Override
     public Iterator<Node> iterator() {
-        return new WikiNodeIterator(root);
+        return new NodeIterator(root);
     }
 
     /**
@@ -35,7 +35,7 @@ public class NodeIterable implements Iterable<Node> {
      * @author downey
      *
      */
-    private class WikiNodeIterator implements Iterator<Node> {
+    private class NodeIterator implements Iterator<Node> {
         // this stack keeps track of the Nodes waiting to be visited
         Deque<Node> stack;
 
@@ -44,8 +44,9 @@ public class NodeIterable implements Iterable<Node> {
          *
          * @param node
          */
-        public WikiNodeIterator(Node node) {
+        public NodeIterator(Node node) {
             stack = new ArrayDeque<Node>();
+            //System.out.println(root); // 태그 포함
             stack.push(root);
         }
 
@@ -67,8 +68,16 @@ public class NodeIterable implements Iterable<Node> {
 
             // push the children onto the stack in reverse order
             List<Node> nodes = new ArrayList<Node>(node.childNodes());
-            Collections.reverse(nodes);
+            // System.out.println("+++" + node.childNodes());
+            // [[ 알고리즘 - BOJ ] 2667. 단지번호붙이기]
+            // []
+            Collections.reverse(nodes); // 내림차순 정렬
+            //System.out.println(nodes);
+            // [[ 알고리즘 - BOJ ] 2667. 단지번호붙이기]
+            // []
             for (Node child: nodes) {
+                //System.out.println(child);
+                // [ 알고리즘 - BOJ ] 2667. 단지번호붙이기
                 stack.push(child);
             }
             return node;
