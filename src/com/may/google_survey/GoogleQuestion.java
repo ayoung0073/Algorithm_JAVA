@@ -1,5 +1,7 @@
 package com.may.google_survey;
 
+import java.util.Arrays;
+
 public class GoogleQuestion {
     String questionText;
     String category;
@@ -36,5 +38,15 @@ public class GoogleQuestion {
 
     public void setQuestionChoices(String[] questionChoices) {
         this.questionChoices = questionChoices;
+    }
+
+    @Override
+    public String toString() {
+        return "GoogleQuestion{" +
+                "questionText='" + questionText + '\'' +
+                ", category='" + category + '\'' +
+                ", required=" + required +
+                ", questionChoices=" + Arrays.toString(questionChoices) +
+                '}';
     }
 }
