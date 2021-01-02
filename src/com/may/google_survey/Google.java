@@ -10,8 +10,6 @@ public class Google {
 
     private String description; // 설문조사 설명
 
-    private String category;
-
     private List<GoogleQuestion> googleQuestions;
 
     public String getName() {
@@ -43,7 +41,6 @@ public class Google {
         return "Google{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", category='" + category + '\'' +
                 ", googleQuestions=" + googleQuestions +
                 '}';
     }
