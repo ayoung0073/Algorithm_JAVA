@@ -14,8 +14,8 @@ public class GoogleSurveyParsing {
 
         Google google = new Google();
 
-        String GOOGLE_SURVEY_URL = "대상 URL 작성";
-
+        //String GOOGLE_SURVEY_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdm96jFIVnaPcI4Y7pKmOBYbXWfgYY8qT7peHQXIMh8WqItxA/viewform?usp=send_form";
+        String GOOGLE_SURVEY_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdC6-M8ZClAAFes01nXnHyRXp6iMhNKkP8wkhSt2Y5eu2_Ybg/viewform?usp=send_form";
         Document doc = Jsoup.connect(GOOGLE_SURVEY_URL).get();
         Element element = doc.selectFirst(".freebirdFormviewerViewHeaderTitleRow"); // 설문조사 이름 select
 
